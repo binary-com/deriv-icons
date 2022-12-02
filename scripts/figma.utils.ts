@@ -49,3 +49,11 @@ export const getESOriginalPath = (pageName: string) => {
 export const getESFinalPath = (pageName: string) => {
   return 'index.ts';
 };
+
+export const getSvgStoreOriginalPath = (pageName: string) => {
+  return `${pageName}.svg`;
+};
+
+export const getSvgStoreFinalPath = (pageName: string) => {
+  return 'icons.svg';
+};

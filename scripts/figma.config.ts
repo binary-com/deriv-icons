@@ -1,19 +1,21 @@
 import outPutEs6 from '@figma-export/output-components-as-es6';
 import outPutSvg from '@figma-export/output-components-as-svg';
 import outPutSvgrComponent from '@figma-export/output-components-as-svgr';
+import outPutSvgStore from '@figma-export/output-components-as-svgstore';
 import transformWithSvgo from '@figma-export/transform-svg-with-svgo';
 import { ComponentOutputter, FigmaExportRC, StringTransformer } from '@figma-export/types';
 import dotenv from 'dotenv';
-
 import outPutStories from './output.stories';
 import {
   ESOutPutConfig,
   RenameEsConfig,
+  RenameSvgStoreConfig,
   StoriesOutPutConfig,
   SvgOutPutConfig,
   SvgReactOutPutConfig,
+  SvgStoreConfig,
 } from './outputters.config';
-import renameEs6 from './rename.es6';
+import renameOutPut from './rename.output';
 
 dotenv.config();
 
@@ -23,8 +25,10 @@ const outputters: ComponentOutputter[] = [
   outPutSvg(SvgOutPutConfig),
   outPutEs6(ESOutPutConfig),
   outPutSvgrComponent(SvgReactOutPutConfig),
-  renameEs6(RenameEsConfig),
+  renameOutPut(RenameEsConfig),
   outPutStories(StoriesOutPutConfig),
+  outPutSvgStore(SvgStoreConfig),
+  renameOutPut(RenameSvgStoreConfig),
 ];
 
 const transformers: StringTransformer[] = [

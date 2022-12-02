@@ -7,7 +7,7 @@ interface TRenameESOptions {
   getFinalPath: (pageName: string) => fs.PathLike;
 }
 
-const renameEs6 = ({
+const renameOutPut = ({
   outPutPath,
   getOriginalPath,
   getFinalPath,
@@ -31,4 +31,4 @@ const renameEs6 = ({
   };
 };
 
-export default renameEs6;
+export default renameOutPut;

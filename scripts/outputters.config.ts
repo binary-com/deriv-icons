@@ -4,6 +4,7 @@ import {
   STORIES_OUT_PUT_PATH,
   SVGR_COMPONENT_OUT_PUT_PATH,
   SVG_OUT_PUT_PATH,
+  SVG_STORE_OUT_PUT_PATH,
 } from './figma.constants';
 import {
   getDirName,
@@ -14,6 +15,8 @@ import {
   getExportTemplate,
   getESOriginalPath,
   getESFinalPath,
+  getSvgStoreOriginalPath,
+  getSvgStoreFinalPath,
 } from './figma.utils';
 
 export const SvgOutPutConfig = {
@@ -60,4 +63,15 @@ export const RenameEsConfig = {
   outPutPath: ES_OUT_PUT_PATH,
   getOriginalPath: getESOriginalPath,
   getFinalPath: getESFinalPath,
+};
+
+export const SvgStoreConfig = {
+  output: SVG_STORE_OUT_PUT_PATH,
+  getIconId: getComponentName,
+};
+
+export const RenameSvgStoreConfig = {
+  outPutPath: SVG_STORE_OUT_PUT_PATH,
+  getOriginalPath: getSvgStoreOriginalPath,
+  getFinalPath: getSvgStoreFinalPath,
 };
