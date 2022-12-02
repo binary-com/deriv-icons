@@ -1,0 +1,11 @@
+export { default as RoundPlaceholderIcon } from './Placeholder';
+export { default as RoundEuroIcon } from './Euro';
+export { default as RoundAudIcon } from './Aud';
+export { default as RoundBtcIcon } from './Btc';
+export { default as RoundBtccashIcon } from './Btccash';
+export { default as RoundEthIcon } from './Eth';
+export { default as RoundAddIcon } from './Add';
+export { default as RoundBusdIcon } from './Busd';
+export { default as RoundEursIcon } from './Eurs';
+export { default as RoundUsdIcon } from './Usd';
+export { default as RoundPoundIcon } from './Pound';
